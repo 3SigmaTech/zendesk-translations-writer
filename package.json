@@ -1,0 +1,41 @@
+{
+    "name": "zendesk-translations-writer",
+    "version": "0.0.1",
+    "description": "Transpile Readme into manifest and translations.",
+    "keywords": [
+        "zendesk",
+        "zaf",
+        "support",
+        "i18n"
+    ],
+    "license": "MIT",
+    "main": "lib/index.js",
+    "bin": "./lib/index.js",
+    "pkg": {
+        "scripts": "lib/**/*.js",
+        "targets": [
+            "node18-linux-x64", "node18-macos-x64", "node18-win-x64"
+        ],
+        "outputPath": "bin"
+    },
+    "jsnext:main": "index",
+    "type": "module",
+    "homepage": "https://github.com/3SigmaTech/zendesk-translations-writer",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/3SigmaTech/zendesk-translations-writer.git"
+    },
+    "scripts": {
+        "prebuild": "rm -rf lib",
+        "build": "tsc",
+        "prepackage": "rm -rf bin",
+        "package": "npm run build && npx pkg ."
+    },
+    "devDependencies": {
+        "pkg": "^5.8.1",
+        "typescript": "^5.0.2"
+    },
+    "dependencies": {
+        "html-entities": "^2.3.3"
+    }
+}

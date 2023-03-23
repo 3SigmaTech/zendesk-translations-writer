@@ -2,7 +2,6 @@
 // -*- js -*-
 
 import * as fs from "fs";
-import * as path from "path";
 
 (function() {
     fs.readFile('./package.json', 'utf8', function (err, data) {

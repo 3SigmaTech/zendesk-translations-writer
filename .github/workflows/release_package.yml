@@ -36,7 +36,7 @@ jobs:
       - name: Github package registry authentication
         run: npm set //npm.pkg.github.com/:_authToken ${{ secrets.PACKAGE_TOKEN }}
       - name: Scope package
-        run: node scope_package.js 
+        run: node ./.github/workflows/scope_package.js 
       - name: Publish package to Github
         run: npm publish
       

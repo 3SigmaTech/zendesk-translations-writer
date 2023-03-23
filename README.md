@@ -19,7 +19,7 @@ Once you install the package in your app development project, `npm i -D zendesk-
 }
 ```
 
-In order for this package to work right[^todo-config] you will need:
+In order for this package to work[^todo-tests] right[^todo-config] you will need:
 
 * A `src/` directory where `translations.js` will be saved.
 * A `translations/` directory with JSON files for each locale you want to support. (They can be blank to start.)
@@ -80,5 +80,6 @@ URL: {{author's url}}
 ```
 
 
+[^todo-tests]: Assuming everything functions as designed as there are no unit tests right now. This is a todo.
 [^todo-config]: At least until I update it to allow more robust configuration, such as setting file locations and the default locale.
 [^todo-manifest]: It is an outstanding TODO to expand this package to support a complete generation of the manifest from the readme file.

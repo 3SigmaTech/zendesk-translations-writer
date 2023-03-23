@@ -28,6 +28,7 @@
     "scripts": {
         "prebuild": "rm -rf lib",
         "build": "tsc",
+        "test": "echo 'There are no tests t this time'",
         "prepackage": "rm -rf bin",
         "package": "npm run build && npx pkg ."
     },

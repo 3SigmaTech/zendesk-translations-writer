@@ -1,6 +1,6 @@
 {
     "name": "zendesk-translations-writer",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Transpile Readme into manifest and translations.",
     "keywords": [
         "zendesk",
